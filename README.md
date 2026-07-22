@@ -1,4 +1,4 @@
-<h1 align="center">IOT Traffic Light
+<h1 align="center">Problem Solving
 </h1>
 
 <div align="center">
@@ -11,11 +11,6 @@
   <a href="https://www.hackerrank.com/profile/hazem1750" target="_blank">
     <img src="https://img.shields.io/static/v1?message=HackerRank&logo=hackerrank&label=&color=2EC866&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="hackerrank logo"  />
   </a>
-
-<a href="https://drive.google.com/drive/folders/17TqiV5ujkwWm6ti9HW6Wo5XlDb5jQ5-h?usp=drive_link" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=google%20drive&logo=googledrive&label=&color=0077B5&logoColor=green&labelColor=&style=for-the-badge" height="25" alt="google logo"  />
-  </a>
-
 
 </div>
 
