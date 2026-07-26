@@ -39,6 +39,6 @@ void PrintAllDigitsFrequency(int Number)
 
 int main(void) {
 
-	PrintAllDigitsFrequency(ReadPositiveNumber("Please enter the a number?"))
+	PrintAllDigitsFrequency(ReadPositiveNumber("Please enter the a number?"));
 	return 0;
 }

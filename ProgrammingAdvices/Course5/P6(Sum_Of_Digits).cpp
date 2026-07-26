@@ -32,6 +32,6 @@ PrintSumResult(int Number){
 
 int main(void) {
 
-	PrintSumResult(SumOfDigits(ReadPositiveNumber("Please enter a positive number?")))
+	PrintSumResult(SumOfDigits(ReadPositiveNumber("Please enter a positive number?")));
 	return 0;
 }

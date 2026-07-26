@@ -34,6 +34,6 @@ void PrintResults(int Number)
 
 int main(void) {
 
-	PrintResults(ReadPositiveNumber("Please enter a positive number?"))
+	PrintResults(ReadPositiveNumber("Please enter a positive number?"));
 	return 0;
 }
