@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
+
 int ReadPositiveNumber(string message)
 {
     int Number = 0;
@@ -22,8 +24,6 @@ int ReverseNumber(int Number) {
     }
     return reversednumber;
 }
-
-using namespace std;
 
 int main(void) {
 
