@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
+
 int ReadPositiveNumber(string message)
 {
     int Number = 0;
@@ -27,7 +29,6 @@ PrintSumResult(int Number){
 	cout << "\nSum Of Digits = " << Number << "\n";
 }
 
-using namespace std;
 
 int main(void) {
 

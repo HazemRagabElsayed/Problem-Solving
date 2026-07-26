@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
+
 int ReadPositiveNumber(string message)
 {
     int Number = 0;
@@ -20,7 +22,7 @@ void PrintDigitsInReverseOrder(int Number) {
         }
 }
 
-using namespace std; int main(void) {
+ int main(void) {
 
 	PrintDigitsInReverseOrder(ReadPositiveNumber("Please enter a positive number?"));
 	return 0;
