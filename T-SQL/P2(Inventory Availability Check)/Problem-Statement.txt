@@ -1,0 +1,33 @@
+Business Background
+
+Before an order is confirmed, inventory must be verified.
+
+Tables
+Products
+---------
+ProductID
+ProductName
+StockQuantity
+IsDiscontinued
+Requirements
+
+Create a stored procedure.
+
+Input:
+
+@ProductID
+@RequestedQuantity
+
+Business logic:
+
+If the product does not exist:
+Return an error.
+If the product is discontinued:
+Reject the order.
+If stock is insufficient:
+Return the available quantity.
+Otherwise:
+Reserve the inventory (subtract stock).
+Return success.
+
+Think about transaction safety.

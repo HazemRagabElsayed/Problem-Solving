@@ -1,0 +1,27 @@
+Business Background
+
+Managers can request salary increases.
+
+Company policy:
+
+Increase up to 10% → automatic approval.
+Between 10% and 20% → HR approval required.
+Above 20% → reject.
+Tables
+Employees
+---------
+EmployeeID
+Salary
+DepartmentID
+Requirements
+
+Create a stored procedure.
+
+Input:
+
+EmployeeID
+NewSalary
+
+The procedure should determine which action to take using IF statements.
+
+Return meaningful messages.

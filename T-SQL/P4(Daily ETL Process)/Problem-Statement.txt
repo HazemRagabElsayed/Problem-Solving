@@ -1,0 +1,27 @@
+Business Background
+
+Every night an ETL job imports sales.
+
+The process should not run twice for the same day.
+
+Tables
+ETL_RunHistory
+--------------
+RunID
+RunDate
+Status
+StartedAt
+CompletedAt
+Requirements
+
+Before importing:
+
+Check whether today's import has already completed.
+If yes:
+Exit immediately.
+Otherwise:
+Continue processing.
+
+Bonus:
+
+Consider how failed executions should behave.

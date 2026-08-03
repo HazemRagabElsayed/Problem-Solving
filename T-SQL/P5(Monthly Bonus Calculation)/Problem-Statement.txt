@@ -1,0 +1,26 @@
+Business Background
+
+Employees receive bonuses only if company revenue exceeds a target.
+
+Tables
+MonthlyRevenue
+--------------
+Month
+Revenue
+Employees
+---------
+EmployeeID
+Salary
+BonusEligible
+Requirements
+
+Write a stored procedure.
+
+If monthly revenue exceeds the target:
+
+Calculate bonuses.
+
+Otherwise:
+
+Skip the calculation.
+Return an informational message.

@@ -1,0 +1,32 @@
+Business Background
+
+An e-commerce company stores customer information in a Customers table.
+
+The business wants to prevent duplicate registrations based on email address.
+
+Existing Table
+Customers
+---------
+CustomerID
+FirstName
+LastName
+Email
+Phone
+CreatedDate
+Requirements
+
+Write a stored procedure that:
+
+Accepts customer information.
+Checks whether the email already exists.
+If the email exists:
+Do not insert the customer.
+Return a descriptive message.
+Otherwise:
+Insert the customer.
+Return a success message.
+Additional Business Rules
+Email comparison should be case-insensitive.
+The procedure should be safe for future growth.
+Avoid unnecessary table scans.
+Write production-quality code.
