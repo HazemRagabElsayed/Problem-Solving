@@ -15,16 +15,16 @@ int ReadPositiveNumber(string message)
     return Number;
 }
 
-EnPrimeNotPrime CheckPrime(int Number) {
+enPrimeNotPrime CheckPrime(int Number) {
 
     int M = round(Number / 2);
 
     for (int counter = 2; counter <= M; counter++) {
         if (Number % counter == 0) 
-		return EnPrimeNotPrime::NotPrime;
+		return enPrimeNotPrime::NotPrime;
     }
 
-    return EnPrimeNotPrime::Prime;
+    return enPrimeNotPrime::Prime;
 }
 
 void PrintPrimeNumbersFrom1ToN(int Number) {
@@ -33,7 +33,7 @@ void PrintPrimeNumbersFrom1ToN(int Number) {
     cout << " are: " << "\n";
 
     for (int i = 1; i <= Number; i++) {
-        if (CheckPrime(i) == EnPrimeNotPrime::Prime)
+        if (CheckPrime(i) == enPrimeNotPrime::Prime)
             cout << i << "\n";
     }
 

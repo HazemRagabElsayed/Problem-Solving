@@ -11,7 +11,7 @@ enum enCharacter
 	Digit
 };
 
-enum class enASCCI 
+enum  enASCCI 
 {
 	a = 97,
 	z = 122,

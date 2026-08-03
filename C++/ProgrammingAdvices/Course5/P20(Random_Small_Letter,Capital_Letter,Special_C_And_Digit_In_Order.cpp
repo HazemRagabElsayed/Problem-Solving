@@ -13,6 +13,14 @@ enum enCharacter
 	Digit
 };
 
+enum enASCCI 
+{
+	a = 97,
+	z = 122,
+	A = 65,
+	Z = 90,
+};
+
 int RandomNumber(int From, int To)
 {
     return rand() % (To - From + 1) + From;
@@ -24,10 +32,10 @@ char RandomCharacter(enCharacter character)
     switch (character)
     {
     case enCharacter::SmallLetter:
-        number = RandomNumber(97, 122);
+        number = RandomNumber((int)enASCCI::a,(int)enASCCI::z);
         break;
     case enCharacter::CapitalLetter:
-        return RandomNumber(65, 90);
+        return RandomNumber((int)enASCCI::A, (int)enASCCI::Z);
         break;
     case enCharacter::SpecialCharacter:
         return RandomNumber(33, 47);
