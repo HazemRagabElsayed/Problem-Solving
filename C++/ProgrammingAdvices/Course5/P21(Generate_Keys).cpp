@@ -11,13 +11,13 @@ enum enCharacter
 	Digit
 };
 
-enum enASCCI 
+enum class enASCCI 
 {
 	a = 97,
 	z = 122,
 	A = 65,
 	Z = 90,
-}
+};
 
 int ReadPositiveNumber(string message)
 {
@@ -40,10 +40,10 @@ char RandomCharacter(enCharacter character)
     switch (character)
     {
     case enCharacter::SmallLetter:
-        number = RandomNumber((int)enASCCI.a, (int)enASCCI.z);
+        number = RandomNumber((int)enASCCI::a,(int)enASCCI::z);
         break;
     case enCharacter::CapitalLetter:
-        return RandomNumber((int)enASCCI.A, (int)enASCCI.Z);
+        return RandomNumber((int)enASCCI::A, (int)enASCCI::Z);
         break;
     case enCharacter::SpecialCharacter:
         return RandomNumber(33, 47);
