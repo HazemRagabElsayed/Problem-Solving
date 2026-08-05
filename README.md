@@ -162,7 +162,7 @@ If you have suggestions for improving a solution or identifying a better approac
 
 **Hazem Ragab Elsayed**
 
-Software Engineer passionate about programming, databases, and continuous learning.
+Software Developer passionate about programming, databases, and continuous learning.
 
 ---
 
