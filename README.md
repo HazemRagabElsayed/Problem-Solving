@@ -22,7 +22,6 @@
 
 ![Language](https://img.shields.io/badge/Language-C++%20%7C%20T--SQL-blue)
 ![Status](https://img.shields.io/badge/Status-Active-success)
-![License](https://img.shields.io/badge/License-MIT-green)
 
 </p>
 
