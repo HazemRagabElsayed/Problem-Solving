@@ -1,0 +1,26 @@
+Business Requirement
+
+Management wants a report showing each employee's bonus percentage based on both department and salary.
+
+Rules:
+
+IT employees:
+Salary >= 10000 → 15%
+Otherwise → 10%
+Sales employees:
+Salary >= 8000 → 12%
+Otherwise → 8%
+Finance employees:
+Always 18%
+HR employees:
+Always 5%
+Expected Output
+EmployeeID EmployeeName	Department	Salary   BonusPercentage
+1	    Ahmed	 	IT		12000   15
+2	    Sara		HR		6500      5
+...	    ...		...	...	...
+
+Requirements
+Use one CASE expression.
+Return the bonus percentage as an integer (e.g., 15, not '15%').
+Keep the query clean and production-ready.

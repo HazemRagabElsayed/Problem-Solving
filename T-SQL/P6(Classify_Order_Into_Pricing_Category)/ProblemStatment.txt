@@ -1,0 +1,30 @@
+Business Requirement
+
+Management wants every order classified into a pricing category.
+
+Rules:
+
+TotalAmount		Category
+أقل من 100			Budget
+ من 100 إلى أقل من 300		Standard
+من 300إلى أقل من 700    	Premium
+أكثر من أو تساوي 700		VIP
+Expected Output
+OrderID	CustomerName	TotalAmount	Category
+1	Ahmed		45		Budget
+2	Sara		120		Standard
+...	...	...	...
+Requirements
+Use CASE
+Give the calculated column the alias:
+Category
+Write the query as if it were going into a production report.
+Keep it clean and readable.
+Think like a professional
+
+Before writing your query, ask yourself:
+
+Should I use a Simple CASE or a Searched CASE?
+Are the boundary conditions (100, 300, 700) handled correctly?
+Is there any possibility of overlapping conditions?
+Is the query easy for another developer to understand?
