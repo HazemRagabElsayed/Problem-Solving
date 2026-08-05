@@ -1,0 +1,23 @@
+Business Requirement
+
+The purchasing department wants a report showing an InventoryStatus for each product.
+
+Business rules (in priority order):
+
+If the product is discontinued (Discontinued = 1) → Discontinued
+If UnitsInStock = 0 → Out of Stock
+If UnitsInStock <= ReorderLevel → Reorder Required
+Otherwise → In Stock
+
+Requirements
+Use a single CASE expression.
+Pay close attention to the order of the conditions.
+
+Return the following columns:
+
+ProductID,
+ProductName,
+UnitsInStock,
+ReorderLevel,
+Discontinued,
+InventoryStatus

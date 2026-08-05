@@ -1,0 +1,71 @@
+Business Requirements
+
+The report must return these columns:
+
+AccountID
+CustomerName
+Balance
+AccountType
+IsFrozen
+AccountStatus
+MaintenanceFee
+RequiresAttention
+Requirement 1 — AccountStatus
+
+Use a CASE expression to determine the account status.
+
+Priority order:
+
+If IsFrozen = 1
+→ Frozen
+If Balance < 0
+→ Overdrawn
+If Balance = 0
+→ Zero Balance
+Otherwise
+→ Active
+Requirement 2 — MaintenanceFee
+
+Use a second CASE expression.
+
+Business rules:
+
+Savings
+Balance >= 10000 → 0
+Otherwise → 25
+Checking
+Always 15
+Business
+Balance >= 50000 → 0
+Otherwise → 50
+Requirement 3 — RequiresAttention
+
+Use a third CASE expression.
+
+Return:
+
+Yes
+
+if any of these are true:
+
+Account is frozen
+Balance is negative
+Balance is zero
+
+Otherwise return
+
+No
+Expected Columns
+AccountID
+CustomerName
+Balance
+AccountType
+IsFrozen
+AccountStatus
+MaintenanceFee
+RequiresAttention
+Requirements
+Use three separate CASE expressions.
+Do not use variables, CTEs, subqueries, or temporary tables.
+Keep the query clean and well-formatted.
+Write it as if it will be included in a production reporting stored procedure.

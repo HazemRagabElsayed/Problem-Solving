@@ -1,0 +1,37 @@
+Business Requirement
+
+Management wants one row per country.
+
+Return the following columns:
+
+Column			Description
+Country			Country name
+TotalOrders		Total number of orders
+CompletedOrders		Number of completed orders
+PendingOrders		Number of pending orders
+CancelledOrders		Number of cancelled orders
+CompletedSales		Sum of completed order amounts only
+AverageCompletedSale	Average amount of completed orders only
+
+Requirements
+
+Return one row per country.
+Use GROUP BY Country.
+Use CASE inside aggregate functions.
+Do not use subqueries, CTEs, temp tables, or views.
+Write the query as if it were part of a production dashboard.
+
+
+You should use aggregate functions such as:
+
+COUNT(...)
+SUM(...)
+AVG(...)
+
+together with CASE.
+
+Senior Developer Challenge ⭐
+
+Try to write the query using the minimum number of CASE expressions while keeping it readable.
+
+A common mistake is to write far more CASE expressions than necessary. Experienced SQL developers look for solutions that are both correct and concise.
