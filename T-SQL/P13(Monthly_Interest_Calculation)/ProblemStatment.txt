@@ -1,0 +1,66 @@
+Business Scenario
+
+A bank has a savings account system.
+
+Interest is calculated once at the end of every month.
+
+A customer opens an account and then requests a report showing how their balance would grow over the next N months.
+
+Since the balance changes every month and the next month's interest depends on the previous month's balance, this is an iterative calculation. A WHILE loop is appropriate because each iteration depends on the result of the previous one.
+
+Business Requirements
+
+Write a T-SQL script that calculates 12 months of interest for AccountID = 1.
+
+For each month:
+
+Read the current balance.
+
+Calculate the monthly interest.
+
+MonthlyInterest = Balance × (AnnualRate / 12 / 100)
+
+Calculate the new balance.
+
+NewBalance = Balance + MonthlyInterest
+Insert one row into InterestHistory containing:
+Month number
+Opening balance
+Interest earned
+Closing balance
+Calculation date
+Continue until all 12 months are calculated.
+Expected Output
+
+After running the script:
+
+SELECT *
+FROM InterestHistory
+WHERE AccountID = 1
+ORDER BY MonthNumber;
+
+You should see something like:
+
+Month	Opening	Interest	Closing
+1	10000.00	50.00	10050.00
+2	10050.00	50.25	10100.25
+3	10100.25	50.50	10150.75
+...	...	...	...
+12	...	...	...
+Constraints
+Use a WHILE loop.
+Do not update the SavingsAccount table. This is a simulation.
+Do not use a cursor.
+Keep the calculations in variables.
+Insert one history record per iteration.
+Think Before You Code
+
+Before writing SQL, answer these questions:
+
+Which variables do you need?
+Which value changes every iteration?
+Which value never changes?
+What should the loop condition be?
+Why can't this calculation be done with a single UPDATE statement?
+What happens if the interest rate is 0%?
+How would you change the script to simulate 60 months instead of 12?

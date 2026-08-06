@@ -1,0 +1,44 @@
+Business Scenario
+
+An e-commerce company receives shipping requests throughout the day.
+
+A SQL Server Agent job runs every few minutes and prepares shipments for the warehouse.
+
+The warehouse system can only process one shipment at a time, so shipments must be handled sequentially.
+
+Business Requirement
+
+Create a script that processes every pending shipment.
+
+For each shipment:
+
+Select the oldest pending shipment.
+Mark its status as 'Processing'.
+Set ProcessedAt to the current date/time.
+Change the status to 'Completed'.
+Continue until no pending shipments remain.
+
+The shipments must be processed in the order they were created.
+
+Constraints
+Use a WHILE loop.
+Process exactly one shipment during each iteration.
+Do not use a cursor.
+Do not process all rows with a single UPDATE.
+Keep the script readable.
+Think Before Coding
+
+Before writing SQL, answer these questions:
+
+What condition should stop the loop?
+How will you identify the next shipment?
+Which variables do you need?
+When should those variables be updated?
+How do you guarantee shipments are processed in chronological order?
+Extra Challenge
+
+Print a message after processing each shipment, for example:
+
+Shipment 1 processed.
+Shipment 2 processed.
+Shipment 3 processed.

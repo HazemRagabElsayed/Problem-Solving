@@ -1,0 +1,52 @@
+Business Scenario
+
+A large e-commerce company stores every user action in an audit table.
+
+After several years, the table contains over 150 million rows.
+
+Deleting all old records with a single statement would:
+
+hold locks for a long time
+generate a massive transaction log
+potentially block other users
+risk lock escalation
+
+Instead, a SQL Server Agent job archives the old records 1,000 rows at a time.
+
+Business Requirement
+
+Archive all audit records that are older than two years.
+
+The process must work like this:
+
+Move at most 1000 rows from AuditLog to AuditLogArchive.
+Delete those same rows from AuditLog.
+Print how many rows were processed in that batch.
+Continue until there are no qualifying rows left.
+Constraints
+Use a WHILE loop.
+Process data in batches.
+Do not process one row at a time.
+Do not use a cursor.
+Do not delete everything in a single statement.
+Think Before You Code
+
+Before writing SQL, answer these questions:
+
+What should stop the loop?
+How do you know how many rows were processed in the current batch?
+How do you ensure the same rows are archived and then deleted?
+What happens if only 347 rows remain?
+Why is processing in batches better than one huge transaction?
+Production Notes
+
+This pattern is used for:
+
+Archiving old data
+Purging logs
+Cleaning historical records
+Large ETL jobs
+Data migration
+Maintenance jobs
+
+Experienced SQL Server developers use this technique regularly because it reduces transaction log growth, minimizes blocking, and makes long-running maintenance tasks safer.
